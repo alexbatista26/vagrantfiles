@@ -1,2 +1,2 @@
-#ignore vagrantfiles
+#ignore vagrant-confs
 .vagrant/
