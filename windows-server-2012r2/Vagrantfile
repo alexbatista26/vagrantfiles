@@ -1,0 +1,14 @@
+
+Vagrant.configure("2") do |config|
+
+  config.vm.box = "addle/windows-server-2012-r2"
+
+  config.vm.provider "virtualbox" do |p|
+        p.name = "srv-windows-server-2012r2"
+        p.memory = 1024
+        p.cpus = 1
+  end
+  config.vm.hostname = "srv-windows-server"
+  config.vm.network "public_network", ip: "192.168.0.52", bridge: "enp34s0"
+
+end
